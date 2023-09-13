@@ -1,0 +1,152 @@
+/******* Diese CSS Befehle greifen für alle Displaygrößen ******/
+
+/***** Hintergrundbild wird fixiert, zentriert und auf Vollbild gestellt ******/
+body {
+    background-image: url(./bilder/hintergrund.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+/***** Dem Inhalt wird eine Schriftart, ein Textschatten und eine Schriftgröße gegeben *****/
+h3,
+h4,
+p {
+    font-family: cursive;
+    text-shadow: 1px 1px 1px grey;
+    font-size: 20px;
+}
+/***** Der Inhalt wird flexibel mit Raum rundherum
+       ausserdem bekommt er einen Rahmenschatten,
+       inneren und äusseren Abstand und abgerundete Ecken *****/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 5px 5px 10px black;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+}
+/****** Der Inhalt wird flexibel und auf horizontaler ´
+        und vertikaler Ebene zentriert ******/
+header .header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/**** Der Inhalt bekommt äusseren Abstand eine Farbe
+      eine Schriftart und Textschatten *****/
+header .header-menu a {
+    margin: 30px;
+    color: black;
+    font-family: cursive;
+    text-shadow: 1px 1px 1px grey;
+}
+/***** Der Inhalt bekommt eine feste Breite
+       einen Rahmenschatten und abgerundete Ecken *****/
+header div img {
+    width: 100px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+}
+/***** Bei allen Inhalten wird der Überfluss scrollbar
+       und der Text zentriert *****/
+main * {
+    overflow: auto;
+    text-align: center;
+}
+ /***** Der Inhalt bekommt Rahmenschatten ,inneren und
+        äusseren Abstand und abgerundete Ecken*****/
+main div {
+    box-shadow: 5px 5px 10px black;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+}
+/***** Der Inhalt bekommt eine feste Breite äusseren Abstand
+       Rahmenschatten und abgerundete Ecken *****/
+main img {
+    width: 180px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+}
+/**** Der Inhalt bekommt einen Hintergrund mit kegelförmigem Farbverlauf ****/
+main .box-1 {
+    background-image: conic-gradient(aliceblue,
+            blue,
+            aqua,
+            blue,
+            aliceblue,
+            blue,
+            aqua,
+            blue,
+            aliceblue);
+}
+/****** Der Inhalt bekommt einen Hintergrund mit rundem Farbverlauf *****/
+main .box-2 {
+    background-image: radial-gradient(yellow 10%,
+            yellowgreen 50%,
+            green 70%,
+            darkgreen 90%);
+}
+/****** Der Inhalt bekommt einen Hintergrund mit linearem Farbverlauf *****/
+main .box-3 {
+    background-image: linear-gradient(30deg,
+            darkviolet,
+            red,
+            yellow);
+}
+/****** Der Inhalt bekommt einen Hintergrund mit linearem Farbverlauf *****/
+main .box-4 {
+    background-image: linear-gradient(330deg,
+            darkviolet,
+            red,
+            yellow);
+}
+/****** Der Inhalt bekommt einen Hintergrund mit rundem Farbverlauf *****/
+main .box-5 {
+    background-image: radial-gradient(burlywood 10%,
+            peru 50%,
+            sienna 70%);
+    overflow: hidden;
+}
+/****** Der Inhalt wird flexibel und zentriert,
+        bekommt einen Rahmenschatten inneren und äusseren Abstand
+        abgerundete Ecken und einen Hintergrund mit linearem Farbverlauf *****/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 5px 5px 10px black;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom,
+            saddlebrown,
+            seagreen,
+            saddlebrown,
+            seagreen,
+            saddlebrown);
+}
+/****** Der Inhalt bekommt eine feste Breite äusseren Abstand
+        einen Rahmenschatten und abgerundete Ecken *****/
+footer img {
+    width: 50px;
+    margin: 10px 20px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+}
+/****** Der Inhalt bekommt eine feste Breite
+        und einen inneren Abstand,
+        der Überfluss wird scrollbar *****/
+footer .footer-disc {
+    max-height: 200px;
+    overflow: auto;
+    padding: 10px;
+}
+/****** Die Scrollbar wird ausgeblendet *****/
+footer .footer-disc::-webkit-scrollbar {
+    display: none;
+}

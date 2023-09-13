@@ -1,0 +1,35 @@
+/****** Diese CSS Befehle greifen bis zu einer maximalen Displaygröße von 599 Pixeln *******/
+@media screen and (max-width: 599px) {
+
+    /****** Inhalt wird flexibel mit Raum rundherum *******/
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /****** Inhalt bekommt eine feste Höhe, und der überfluss wird scrollbar ******/
+    main .box-3,
+    main .box-4 {
+        height: 250px;
+        overflow: auto;
+    }
+
+    /***** Die Scrollbar wird ausgeblendet *****/
+    main .box-1::-webkit-scrollbar,
+    main .box-2::-webkit-scrollbar,
+    main .box-3::-webkit-scrollbar,
+    main .box-4::-webkit-scrollbar {
+        display: none;
+    }
+
+    /****** Der Inhalt bekommt eine feste Breite und eine maximale Höhe *******/
+    main .box-1,
+    main .box-2,
+    main .box-3,
+    main .box-4,
+    main .box-5 {
+        width: 225px;
+        max-height: 200px;
+    }
+}

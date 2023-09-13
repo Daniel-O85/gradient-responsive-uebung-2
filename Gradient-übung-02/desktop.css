@@ -1,0 +1,38 @@
+/******* Diese CSS Befehlen greifen ab einer Displaygröße von mindestens 600 Pixeln ******/
+@media screen and (min-width: 600px) {
+
+/***** Rechter Seitenabstand ******/
+    header .header-menu a {
+        margin-right: 100px;
+    }
+/******* Hauptinhalt mit 3 Spalten *******/
+    main {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+/***** Inhalt startet in Spalte 2 und wird auf 2 Spalten getreckt ******/
+    main .box-1 {
+        grid-column-end: span 2;
+        grid-row-end: span 2;
+    }
+/****** Inhalt wird auf 4 Zeilen gestreckt *******/
+    main .box-2 {
+        grid-row-end: span 4;
+    }
+/******* Der Inhalt bekommt eine feste Größe ******/
+    main .box-3,
+    main .box-4 {
+        height: 250px;
+    }
+/****** Die Scrollbar wird ausgeblendet ******/
+    main .box-3::-webkit-scrollbar,
+    main .box-4::-webkit-scrollbar {
+        display: none;
+    }
+/****** Der Inhalt wird auf 2 Spalten gestreckt *******/
+    main .box-5 {
+        grid-column-end: span 2;
+    }
+
+
+}
